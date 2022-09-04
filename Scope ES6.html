@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ES6 SCOPES
+
+//There are 3 kind of scopes
+
+//Global Scope totally same with ES5
+
+//Function Scope 
+
+//Variables declared in a function with var let and const, than variables can be access anywhere in tih function.
+
+function myFunction(){
+    var val=2;
+        if(val<=4){
+            val=5
+        };
+        console.log(val)
+}
+    myFunction(); // Result 5 Function Scope
+
+function myFunction2(){
+    let val2=2;
+        if(val2>1){
+            val2=4;
+        }
+        console.log(val2);
+}
+    myFunction2(); // Result 4 Function Scops
+
+//Block Scope
+
+// Variables declared in a function with let or const, than variable can be access until the other brackets.
+
+{
+    let val3=2;
+}
+    coole.log(val3); //Not Defined code can not be used here
+
+{
+    var val4=2;
+}
+    console.log(val4); //Result 2 code canbe used here
+
+
+
+    </script>
+</body>
+</html>

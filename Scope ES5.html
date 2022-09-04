@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//ES5 SCOPES 
+
+//There are 2 kind of scopes
+
+//Global Scope
+
+//Variables declared with let, const and var, than Variable be Global Scope and can be use anywhere in JS Programme -->
+
+    var val=2;
+    function myFunction(){
+        console.log(val);
+    };
+    myFunction(); //Result 2 Global Scope
+
+    let val2=2;
+    function myFunction2(){
+        console.log(val2);
+    };
+    myFunction(); //Result 2 Global Scope
+
+    const val3=2;
+    function myFunction3(){
+        console.log(val3);
+    };
+    myFunction(); //Result 2 Global Scope
+
+//Local Scope
+
+//Variable declared insade a function it can be only used inside this function
+
+    function myFunction4(){
+        let val4=2;
+            console.log(val); 
+    };
+    myFunction5(); //Result 2 Local Scope
+
+    function myFunction5(){
+        let val5=2;
+            //Code can be used here
+    };
+            //Code can not be used here
+
+//ES6 SCOPES
+
+//There are 3 kind of scopes
+
+//Global Scopes totally same with ES5
+
+//
+
+
+    </script>
+</body>
+</html>
